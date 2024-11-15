@@ -1,0 +1,141 @@
+body{
+    background-color: #762c54;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff5733;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e04d28;
+    transform: scale(1.1);
+  }
+  
+  .benefits {
+    margin: 50px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .benefit-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    
+    justify-items: center;
+  }
+  
+  .card {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    background-color: #fff;
+    width: 280px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .benefit-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefit-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
