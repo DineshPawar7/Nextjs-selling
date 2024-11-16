@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FaShoppingCart } from 'react-icons/fa';
 import styles from './styles/Header.module.css';
+import './styles/globals.css';
 
 
 export default function Header() {
